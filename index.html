@@ -1,38 +1,70 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
       Bluefox Technologies
     </title>
+    <link href="styles.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   </head>
   <body>
-    <header class="p-3 bg-dark text-white">
+    <header class="p-2 bg-light sticky-top">
       <div class="container">
         <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-          <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
-            <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+          <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-decoration-none">
+            <img class="bi me-2" width="32" height="32" role="img" aria-label="Bluefox" src="logo.jpg"></img>
           </a>
 
           <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-            <li><a href="#" class="nav-link px-2 text-secondary">Home</a></li>
-            <li><a href="#" class="nav-link px-2 text-white">Features</a></li>
-            <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
-            <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
-            <li><a href="#" class="nav-link px-2 text-white">About</a></li>
+            <li><a href="/" class="nav-link px-2 text-secondary">Bluefox</a></li>
+            <li><a href="#about" class="nav-link px-2 text-secondary">Sobre nosotros</a></li>
+            <li><a href="#services" class="nav-link px-2 text-secondary">Servicios</a></li>
+            <li><a href="#products" class="nav-link px-2 text-secondary">Productos</a></li>
+            <li><a href="#pricing" class="nav-link px-2 text-secondary">Precios</a></li>
+            <li><a href="#faq" class="nav-link px-2 text-secondary">FAQs</a></li>
           </ul>
 
-          <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
-            <input type="search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search">
-          </form>
-
           <div class="text-end">
-            <button type="button" class="btn btn-outline-light me-2">Login</button>
-            <button type="button" class="btn btn-warning">Sign-up</button>
+            <a href="#contact" class="nav-link px-2 text-secondary">Contacto</a>
           </div>
         </div>
       </div>
     </header>
+
+    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+      <div class="col-md-5 p-lg-5 mx-auto my-5">
+        <h1 class="display-4 fw-normal">Sobre nosotros</h1>
+        <p class="lead fw-normal">Somos una empresa dedicada a dar la mejor atención a los salvadoreños.</p>
+        <a class="btn btn-outline-secondary" href="#">Ver más</a>
+      </div>
+      <div class="product-device shadow-sm d-none d-md-block"></div>
+      <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+    </div>
+
+    <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+      <div class="bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+        <div class="my-3 py-3">
+          <h2 class="display-5">Diagnóstico</h2>
+          <p class="lead">Comprobamos su dispositivo en busca de errores.</p>
+        </div>
+        <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+      </div>
+      <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="my-3 p-3">
+          <h2 class="display-5">Cambio de pantalla</h2>
+          <p class="lead">Cambiamos su pantalla rota o dañada por una nueva.</p>
+        </div>
+        <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+      </div>
+    </div>
+
+    <div class="container">
+      <footer class="py-3 my-4">
+        <p class="text-center text-muted">© 2022 Bluefox, Inc</p>
+      </footer>
+    </div>
   </body>
 </html>
